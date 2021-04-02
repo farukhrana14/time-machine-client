@@ -1,0 +1,42 @@
+.pen-svg{
+    margin: 10px;
+}
+.trash-svg{
+    margin-bottom: 10px;
+}
+
+table, td, th {
+    border: 0.5px solid rgb(150, 149, 149);
+    padding: 5px;
+    
+}
+
+.table-header{
+    background-color:rgb(240, 231, 231);
+}
+
+  td {
+    font-weight: bolder;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 750px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+  }
+  
+  th {
+    height: 70px;
+  }
+
+  .quantity-column{
+    text-align: center;
+
+  }
+
+  .price-column{
+    text-align: right;
+    padding-right: 10px;
+    
+  }

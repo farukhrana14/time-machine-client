@@ -10,6 +10,8 @@ import Orders from "./components/Orders/Orders";
 import { createContext, useState } from "react";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Shipment from "./components/Shipment/Shipment";
+import AddProducts from "./components/Admin/AddProducts";
+import EditProducts from "./components/Admin/EditProducts";
 export const UserContext = createContext();
 
 function App() {
@@ -41,6 +43,17 @@ function App() {
             <Route path="/admin">
               <Admin />
             </Route>
+
+           
+            <Route path="/admin/addProducts">
+              <AddProducts/>
+            </Route>
+            
+            <Route path="/admin/editProducts">
+              <EditProducts/>
+            </Route>
+
+
 
             <Route path="/home">
               <Shop />

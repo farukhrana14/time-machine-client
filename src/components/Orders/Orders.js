@@ -59,6 +59,9 @@ const Orders = () => {
           </table>
           <br />
           <Link to={{pathname: "/shipment", state: {preOrder}}}><button className="btn btn-primary">Place Order</button></Link>
+          <span> </span>
+          <span> </span>
+          <Link to="/"><button className="btn btn-primary">Cancel Order</button></Link>
         </div>
         
       </div>
