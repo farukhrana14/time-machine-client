@@ -13,7 +13,7 @@ const Orders = () => {
   useEffect(() => {
   
     if(id) {
-      fetch("http://localhost:5000/orders/" + id)
+      fetch("https://ancient-mountain-27815.herokuapp.com/orders/" + id)
       .then((res) => res.json())
       .then((data) => setPreOrder(data));
     }

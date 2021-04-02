@@ -7,8 +7,8 @@ const Shop = () => {
     const [products, setProducts] = useState([]);
     
     useEffect(()=>{
-        // const url = "http://localhost:5000/allProducts";
-        fetch ("http://localhost:5000/allProducts")
+        // const url = "https://ancient-mountain-27815.herokuapp.com/allProducts";
+        fetch ("https://ancient-mountain-27815.herokuapp.com/allProducts")
         .then(res => res.json())
         .then(data => setProducts(data))
         

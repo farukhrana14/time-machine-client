@@ -9,14 +9,14 @@ const EditProducts = () => {
 
 
   useEffect(() => {
-    fetch("http://localhost:5000/allProducts")
+    fetch("https://ancient-mountain-27815.herokuapp.com/allProducts")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, [deleteState]);
 
   const handleDelete = (id)=> {
     console.log('clicked', id);
-      fetch("http://localhost:5000/deleteProduct/"+id)
+      fetch("https://ancient-mountain-27815.herokuapp.com/deleteProduct/"+id)
       .then((res) => res.json())
       .then((data) => {data && setDeleteState(data)});
 }

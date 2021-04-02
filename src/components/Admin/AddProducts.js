@@ -31,7 +31,7 @@ const onSubmit = (data, e) =>{
         price: data.price,
         photoURL: imageURL
    };
-   const url = `http://localhost:5000/addProduct`;
+   const url = `https://ancient-mountain-27815.herokuapp.com/addProduct`;
 
    fetch(url,{
     method: 'POST', 
