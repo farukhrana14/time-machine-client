@@ -28,9 +28,9 @@ function App() {
               <Orders />
             </PrivateRoute>
 
-            <Route path="/shipment">
+            <PrivateRoute path="/shipment">
               <Shipment/>
-            </Route>
+            </PrivateRoute>
 
             <Route path="/orders">
               <Orders/>
@@ -40,18 +40,18 @@ function App() {
               <LogIn />
             </Route>
 
-            <Route path="/admin">
+            <PrivateRoute path="/admin">
               <Admin />
-            </Route>
+            </PrivateRoute>
 
            
-            <Route path="/admin/addProducts">
+            <PrivateRoute path="/admin/addProducts">
               <AddProducts/>
-            </Route>
+            </PrivateRoute>
             
-            <Route path="/admin/editProducts">
+            <PrivateRoute path="/admin/editProducts">
               <EditProducts/>
-            </Route>
+            </PrivateRoute>
 
 
 

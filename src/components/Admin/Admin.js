@@ -1,4 +1,5 @@
 import React from 'react';
+import PrivateRoute from '../PrivateRoute/PrivateRoute';
 import Sidebar from './Sidebar';
 
 const Admin = () => {
@@ -6,7 +7,10 @@ const Admin = () => {
         <div className='admin-main-div'>
             
             <div className='sidebar-div'>
-            <Sidebar></Sidebar>
+            <PrivateRoute>
+                <Sidebar></Sidebar>
+            </PrivateRoute>
+
             </div>
 
             <div className='admin-task-area'>

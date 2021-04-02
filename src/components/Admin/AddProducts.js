@@ -25,7 +25,7 @@ const AddProducts = () => {
 
 }
 
-const onSubmit = (data) =>{
+const onSubmit = (data, e) =>{
     const eventData = {
         name: data.productName,
         price: data.price,
@@ -41,6 +41,8 @@ const onSubmit = (data) =>{
     body: JSON.stringify(eventData)
    })
    .then(res => console.log(res.status))
+
+   e.target.reset();
 
 
 }
@@ -61,7 +63,9 @@ const onSubmit = (data) =>{
         <input name="inputFile" type="file" onChange={handleImageUpload} ref={register({ required: true })} />
         {errors.name && <span className="error">Price is required</span>}
         <br/>
-        <input type="submit" />
+        {
+            imageURL && <input type="submit" />
+        }
       </form>
     </div>
   );
