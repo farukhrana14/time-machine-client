@@ -1,19 +1,25 @@
 import React, { useEffect, useState } from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faPenSquare} from '@fortawesome/free-solid-svg-icons';
-import {faTrashAlt} from '@fortawesome/free-solid-svg-icons';
-
+import {faPenSquare, faTrashAlt} from '@fortawesome/free-solid-svg-icons';
 import "./EditProducts.css";
 
 const EditProducts = () => {
   const [products, setProducts] = useState([]);
+  const [deleteState, setDeleteState] = useState([]);
+
 
   useEffect(() => {
-    // const url = "http://localhost:5000/allProducts";
     fetch("http://localhost:5000/allProducts")
       .then((res) => res.json())
       .then((data) => setProducts(data));
-  }, [products]);
+  }, [deleteState]);
+
+  const handleDelete = (id)=> {
+    console.log('clicked', id);
+      fetch("http://localhost:5000/deleteProduct/"+id)
+      .then((res) => res.json())
+      .then((data) => {data && setDeleteState(data)});
+}
 
   return (
     <div>
@@ -31,11 +37,11 @@ const EditProducts = () => {
             {
 
                 products && products.map(product => 
-                    <tr>
+                    <tr key = {product._id}>
                     <td>{product.name}</td>
                     <td className="quantity-column">1</td>
                     <td className="price-column"> <span>$</span> {product.price}</td>
-                    <td><FontAwesomeIcon className="pen-svg" color="#007300" size='2x' icon={faPenSquare}/> <FontAwesomeIcon className="trash-svg" color="#DC143C" size='2x' icon={faTrashAlt}/> </td>
+                    <td><FontAwesomeIcon className="pen-svg" color="#007300" size='2x' icon={faPenSquare}/> <FontAwesomeIcon onClick={()=>handleDelete(product._id)} className="trash-svg" color="#DC143C" size='2x' icon={faTrashAlt}/> </td>
                   </tr>
                 )
 

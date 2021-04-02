@@ -50,8 +50,8 @@ const Shipment = (data) => {
           <input type="submit" value="Check Out" />
         </form>
       </div>
-      <div ClassName="shipment-right col-md-8">
-          <h3>Anybody there Anybody there Anybody there</h3>
+      <div className="shipment-right col-md-8">
+          <h3>Thank you!</h3>
       </div>
     </div>
   );

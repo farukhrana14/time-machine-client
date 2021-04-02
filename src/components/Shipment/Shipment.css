@@ -21,8 +21,9 @@
     margin-bottom: 200px;
 }
 .shipment-right{
-    background-color: red;
+    background-color: whitesmoke;
     height: 100vh;
-    border: 2px solid gray;
+    /* border: 2px solid gray; */
+    border-radius:5px;
     
 }

@@ -2,6 +2,9 @@ import React from 'react';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import AddProducts from './AddProducts';
 import EditProducts from './EditProducts';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faTools, faPen, faPlusSquare} from '@fortawesome/free-solid-svg-icons';
+import './Sidebar.css';
 
 const routes = [
     
@@ -32,13 +35,13 @@ const Sidebar = () => {
         >
           <ul style={{ listStyleType: "none", padding: 0 , marginLeft: '50px' }}>
             <li>
-              <p>Manage Products</p> 
+              <p><FontAwesomeIcon className="tools-svg svg-icons" color="#000080" size='2x' icon={faTools}/>Manage Products</p> 
             </li>
             <li>
-              <Link to="/admin/addProducts">Add Products</Link>
+              <Link to="/admin/addProducts"> <FontAwesomeIcon className="plus-svg svg-icons" color="#007300" size='2x' icon={faPlusSquare}/> Add Products</Link>
             </li>
             <li>
-              <Link to="/admin/editProducts">Edit Products</Link>
+              <Link to="/admin/editProducts"> <FontAwesomeIcon className="fapen-svg svg-icons" color="#DC143C" size='2x' icon={faPen}/> Edit Products</Link>
             </li>
           </ul>
 

@@ -9,7 +9,7 @@ const NavTop = () => {
 
  //Context API consume
  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-  console.log(loggedInUser);
+  // console.log(loggedInUser);
 
   const handleSignOut = () => {
     setLoggedInUser({})
