@@ -1,0 +1,51 @@
+.main-order-div{
+  display: flex;
+  justify-content: space-around;
+}
+
+.order-image-div img{
+  width: 70%;
+}
+
+
+
+.my-table{
+    overflow-x: auto;
+    margin-top: 50px;;
+    margin-bottom: 250px;
+
+}
+
+table, td, th {
+    border: 1px solid rgb(150, 149, 149);
+    padding: 5px;
+    
+  }
+
+  td {
+    font-weight: bolder;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 750px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+  }
+  
+  th {
+    height: 70px;
+  }
+
+  .quantity-column{
+    text-align: center;
+  }
+
+  .price-column{
+    text-align: right;
+    
+  }
+
+  .not-signed-in-div{
+    margin-bottom: 300px;
+  }

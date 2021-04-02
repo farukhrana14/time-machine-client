@@ -1,0 +1,56 @@
+.navbar-brand img{
+    margin-top: -7px;
+    width: 300px;
+    background-color: white;
+    padding: 5px;
+    border-radius:3px;
+    
+}
+
+.navbar-top{
+background-color: whitesmoke;
+}
+
+.mySearch{
+    
+    width: 50%;
+}
+
+.mySearch-area{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.my-button{
+    margin-left: 2px;
+}
+
+.loggedin-image img{
+    width: 30%;
+    margin-left: 10px;
+    border-radius:50%;
+}
+.my-navbar-right{
+    margin-top: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    text-decoration: none;
+    color:#337ab7;
+    text-transform: inherit;
+}
+
+.my-navbar-right-logout{
+    margin-top: 0px;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu';
+    text-decoration: none;
+    color:#337ab7;
+    cursor: pointer;
+}
+
+.my-navbar-right-logout:hover{
+background-color: lightgray;
+}
+.my-navbar-right-signin{
+    margin-top: -15px;
+}

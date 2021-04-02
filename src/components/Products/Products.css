@@ -1,0 +1,8 @@
+.my-card{
+    margin-top: 20px;
+    border: 5px solid whitesmoke !important;
+    margin: 5px;
+    width: fit-content;
+    height: 550px;
+    border-radius:10px;
+}
