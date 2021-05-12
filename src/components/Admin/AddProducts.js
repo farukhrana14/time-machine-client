@@ -31,7 +31,7 @@ const onSubmit = (data, e) =>{
         price: data.price,
         photoURL: imageURL
    };
-   const url = `https://ancient-mountain-27815.herokuapp.com/addProduct`;
+   const url = `https://time-machine-2021.herokuapp.com/addProduct`;
 
    fetch(url,{
     method: 'POST', 

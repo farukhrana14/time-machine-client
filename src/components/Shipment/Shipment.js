@@ -17,7 +17,7 @@ const Shipment = (data) => {
   const onSubmit = (data) => {
     const orderDetails = {customer: {...loggedInUser}, products: {...orderProduct}, shipment: data, orderTime: new Date() }
     
-    fetch('https://ancient-mountain-27815.herokuapp.com/addOrder', {
+    fetch('https://time-machine-2021.herokuapp.com/addOrder', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json'},
         body: JSON.stringify(orderDetails)

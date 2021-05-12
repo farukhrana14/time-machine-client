@@ -9,14 +9,14 @@ const EditProducts = () => {
 
 
   useEffect(() => {
-    fetch("https://ancient-mountain-27815.herokuapp.com/allProducts")
+    fetch("https://time-machine-2021.herokuapp.com/allProducts")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, [deleteState]);
 
   const handleDelete = (id)=> {
     console.log('clicked', id);
-      fetch("https://ancient-mountain-27815.herokuapp.com/deleteProduct/"+id)
+      fetch("https://time-machine-2021.herokuapp.com/deleteProduct/"+id)
       .then((res) => res.json())
       .then((data) => {data && setDeleteState(data)});
 }
