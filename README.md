@@ -4,8 +4,8 @@ This assignment is submitted as a par of Complete Web Development Course by [Pro
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Site and code links
-Live site hosted at [Firebase](https://time-machine-7b98e.web.app/admin/addProducts) 
-& Code repository is at [Client-side](https://github.com/Porgramming-Hero-web-course/full-stack-client-farukhrana14) and [Server-side](https://github.com/Porgramming-Hero-web-course/full-stack-server-farukhrana14)
+Live site hosted at [Firebase](https://time-machine-7b98e.web.app) 
+& Code repository is at [Client-side](https://github.com/farukhrana14/time-machine-client) and [Server-side](https://github.com/farukhrana14/time-machine-server)
 
 
 ## Tasks in the assignment
