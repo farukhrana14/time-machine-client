@@ -4,8 +4,10 @@ This assignment is submitted as a par of Complete Web Development Course by [Pro
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Site and code links
-Live site hosted at [Firebase](https://time-machine-7b98e.web.app) 
-& Code repository is at [Client-side](https://github.com/farukhrana14/time-machine-client) and [Server-side](https://github.com/farukhrana14/time-machine-server)
+-  Live site hosted at [Firebase](https://time-machine-7b98e.web.app) 
+-  Git-Client is at [Client-side](https://github.com/farukhrana14/time-machine-client) 
+-  Git-Server is at [Server-side](https://github.com/farukhrana14/time-machine-server)
+- Deployed on [Heroku] (https://time-machine-2021.herokuapp.com)
 
 
 ## Tasks in the assignment
