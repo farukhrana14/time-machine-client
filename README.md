@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 -  Live site hosted at [Firebase](https://time-machine-7b98e.web.app) 
 -  Git-Client is at [Client-side](https://github.com/farukhrana14/time-machine-client) 
 -  Git-Server is at [Server-side](https://github.com/farukhrana14/time-machine-server)
-- Deployed on [Heroku] (https://time-machine-2021.herokuapp.com)
+- Deployed on [Heroku](https://time-machine-2021.herokuapp.com)
 
 
 ## Tasks in the assignment
